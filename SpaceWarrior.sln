@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceWarrior", "SpaceWarrior\SpaceWarrior.vcxproj", "{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Debug|x64.ActiveCfg = Debug|x64
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Debug|x64.Build.0 = Debug|x64
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Debug|x86.Build.0 = Debug|Win32
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Release|x64.ActiveCfg = Release|x64
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Release|x64.Build.0 = Release|x64
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Release|x86.ActiveCfg = Release|Win32
+		{0E16D9D4-A6FE-493E-846C-A7E36C6EB208}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D389D02F-A6F0-4911-B6ED-8F63C2CDEEBA}
+	EndGlobalSection
+EndGlobal
