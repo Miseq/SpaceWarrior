@@ -1,6 +1,6 @@
 #pragma once
 #include "Entity.h"
-class Asteroid : protected Entity
+class Asteroid : public Entity
 {
 public:
 	Asteroid();

@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "Bullet.h"
 
 
 Bullet::Bullet()
@@ -7,7 +6,7 @@ Bullet::Bullet()
 	name = "bullet";
 }
 
-void  update()
+void  Bullet::update()
 {
 	dx = cos(angle*DEGTORAD) * 6;
 	dy = sin(angle*DEGTORAD) * 6;

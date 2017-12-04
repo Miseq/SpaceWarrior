@@ -6,7 +6,7 @@ Animation::Animation()
 {
 }
 
-Animation(Texture &t, int x, int y, int w, int h, int count, float Speed)
+Animation::Animation(Texture &t, int x, int y, int w, int h, int count, float Speed)
 {
 	Frame = 0;
 	speed = Speed;

@@ -1,7 +1,7 @@
 #pragma once
 #include "Animation.h"
 #include <string>
-class Entity
+class Entity 
 {
 protected:
 	float x, y, dx, dy, R, angle;
