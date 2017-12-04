@@ -1,6 +1,6 @@
 #pragma once
 
-class Player : Entity
+class Player : public Entity
 {
 public:
 	bool thrust;
