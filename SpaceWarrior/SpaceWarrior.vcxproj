@@ -72,6 +72,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Programming\SpaceWarrior\SpaceWarrior\assets;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programming\SpaceWarrior\SpaceWarrior\assets;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -90,11 +94,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Program Files %28x86%29\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>D:\Programming\SpaceWarrior\SpaceWarrior\assets;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Program Files %28x86%29\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Programming\SpaceWarrior\SpaceWarrior\assets;D:\Program Files %28x86%29\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-network-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -169,6 +174,31 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\openal32.dll" />
+    <None Include="assets\sfml-audio-2.dll" />
+    <None Include="assets\sfml-audio-d-2.dll" />
+    <None Include="assets\sfml-graphics-2.dll" />
+    <None Include="assets\sfml-graphics-d-2.dll" />
+    <None Include="assets\sfml-network-2.dll" />
+    <None Include="assets\sfml-network-d-2.dll" />
+    <None Include="assets\sfml-system-2.dll" />
+    <None Include="assets\sfml-system-d-2.dll" />
+    <None Include="assets\sfml-window-2.dll" />
+    <None Include="assets\sfml-window-d-2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\alienspaceship.png" />
+    <Image Include="assets\background.jpeg" />
+    <Image Include="assets\fire_blue.png" />
+    <Image Include="assets\fire_red.png" />
+    <Image Include="assets\rock.png" />
+    <Image Include="assets\rock_small.png" />
+    <Image Include="assets\space-background.jpeg" />
+    <Image Include="assets\spaceassets.png" />
+    <Image Include="assets\spaceshpis.jpg" />
+    <Image Include="assets\WingCommander_Topdown_ships.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

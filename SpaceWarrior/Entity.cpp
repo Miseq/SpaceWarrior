@@ -7,11 +7,11 @@ Entity::Entity()
 	life = 1;
 }
 
-void Entity::settings(Animation &a, int X, int Y, float Angle = 0, int radius = 1)
+void Entity::settings(Animation &a, int X, int Y, float Angle, int radius) 
 {
 	anim = a;
 	x = X; y = Y;
-	angle = Angle;
+	this->angle = Angle;
 	R = radius;
 }
 
@@ -31,3 +31,10 @@ void Entity::draw(RenderWindow &app)
 Entity::~Entity()
 {
 }
+
+void Entity::setName(std::string Name)
+{
+	this->name = Name;
+}
+
+

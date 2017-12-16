@@ -66,4 +66,71 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sfml-audio-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-audio-d-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-graphics-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-graphics-d-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-network-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-network-d-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-system-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-system-d-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-window-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\sfml-window-d-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\openal32.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\spaceassets.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\space-background.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\spaceshpis.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\WingCommander_Topdown_ships.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\alienspaceship.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\background.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\fire_blue.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\fire_red.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\rock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\rock_small.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

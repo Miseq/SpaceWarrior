@@ -5,7 +5,7 @@ class Bullet : public Entity
 public:
 	Bullet();
 	~Bullet();
-	void  update()
+	void  update();
 
 };
 
