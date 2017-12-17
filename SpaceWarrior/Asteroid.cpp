@@ -3,13 +3,16 @@
 
 Asteroid::Asteroid()
 {
-	dx = rand() % 8 - 4;
-	dy = rand() % 2 + 1;
+	// dx - szybkosc poruszania w poziomie + prawo - lewo
+	// dy - szybkosc porusznia w pionie, dodatnia w dol(numeracja pikseli rosnie w dol ekranu
+	dx = rand() % 3 - 1.5;
+	dy = rand() % 2 + 0.7;
 	name = "asteroid";
 }
 
 void  Asteroid::update()
 {
+	// warunki utrzymujace asteroidy "na torze"
 	this->x += dx;
 	this->y += dy;
 	if (x > W) this->x = 0;
