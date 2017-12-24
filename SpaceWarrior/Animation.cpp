@@ -6,7 +6,7 @@ Animation::Animation()
 {
 }
 
-Animation::Animation(Texture &t, int x, int y, int w, int h, int count, float Speed)
+Animation::Animation(Texture &t, int x, int y, int w, int h, int count, float Speed, Vector2f scale)
 {
 	Frame = 0;
 	speed = Speed;
@@ -17,6 +17,7 @@ Animation::Animation(Texture &t, int x, int y, int w, int h, int count, float Sp
 	sprite.setTexture(t);
 	sprite.setOrigin(w / 2, h / 2);
 	sprite.setTextureRect(frames[0]);
+	sprite.scale(scale);
 }
 
 bool Animation::isEnd()

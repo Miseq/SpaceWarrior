@@ -2,9 +2,12 @@
 
 class Player : public Entity
 {
+private:
+	int speed = 3;
 public:
-	bool thrust;
 	void update();
+	void playerMoveRight();
+	void playerMoveLeft();
 	Player();
 	~Player();
 };

@@ -18,7 +18,7 @@ void Entity::settings(Animation &a, int X, int Y, float Angle, int radius)
 void Entity::draw(RenderWindow &app) 
 {
 	anim.sprite.setPosition(x, y);
-	anim.sprite.setRotation(angle + 90);
+	anim.sprite.setRotation(angle + 90); // TODO usunaæ anim i animacje bo skoro dziedziczy to na chuj
 	app.draw(anim.sprite);
 
 	CircleShape circle(R);
