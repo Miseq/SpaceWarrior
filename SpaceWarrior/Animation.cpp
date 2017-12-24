@@ -6,16 +6,16 @@ Animation::Animation()
 {
 }
 
-Animation::Animation(Texture &t, int x, int y, int w, int h, int count, float Speed, Vector2f scale)
+Animation::Animation(Texture &t, FloatRect position, int count, float Speed, Vector2f scale)
 {
+	FloatRect in_position = position;
 	Frame = 0;
 	speed = Speed;
-
 	for (int i = 0; i<count; i++)
-		frames.push_back(IntRect(x + i*w, y, w, h));
-
+		frames.push_back(IntRect(in_position.left + i*in_position.width, in_position.top, in_position.width, in_position.height));
+	//frames.push_back(IntRect(x + i*w, y, w, h));
 	sprite.setTexture(t);
-	sprite.setOrigin(w / 2, h / 2);
+	sprite.setOrigin(in_position.width / 2, in_position.height / 2);
 	sprite.setTextureRect(frames[0]);
 	sprite.scale(scale);
 }

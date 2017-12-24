@@ -3,7 +3,7 @@
 #include <string>
 class Entity : public Animation
 {
-private:
+public:
 	float x, y, dx, dy, R, angle;
 	bool life;
 	std::string name;
