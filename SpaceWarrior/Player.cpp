@@ -12,16 +12,17 @@ void Player::update()
 {
 }
 
-void Player::playerMoveRight()
+
+void Player::playerMove(int speed )
 {
 	this->x += speed;
-	if (this->x >= W) this->x = W;
+	if (this->x <= 0) this->x = 0;
+	else if (this->x >= W) this->x = W;
 }
 
-void Player::playerMoveLeft()
+void Player::setAnimation(Animation newAnim)
 {
-	this->x -= speed;
-	if (this->x <= 0) this->x = 0;
+	this->anim = newAnim;
 }
 
 Player::~Player()

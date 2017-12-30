@@ -2,13 +2,11 @@
 
 class Player : public Entity
 {
-private:
-	int speed = 3;
 public:
 	void update();
-	void playerMoveRight();
-	void playerMoveLeft();
 	Player();
+	void playerMove(int speed = 0);
+	void setAnimation(Animation newAnim);
 	~Player();
 };
 
