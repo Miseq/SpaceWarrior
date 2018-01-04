@@ -14,7 +14,7 @@ Singleton::Singleton()
 	Texture* t5 = new Texture();
 	Texture* t6 = new Texture();
 	Texture* t7 = new Texture();
-	
+
 	defaultPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingLeftPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingRightPlayerTexture->loadFromFile("assets/spaceassets.png");
@@ -46,6 +46,8 @@ Singleton::Singleton()
 	Animacje["playerPositionRight"] = sPlayerRight;
 	Animacje["playerPositionLeft"] = sPlayerLeft;
 	Animacje["shipExplosion"] = sExplosion_ship;
+
+
 }
 
 Singleton* Singleton::instance = 0;

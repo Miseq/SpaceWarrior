@@ -189,10 +189,22 @@
     <None Include="assets\sfml-system-d-2.dll" />
     <None Include="assets\sfml-window-2.dll" />
     <None Include="assets\sfml-window-d-2.dll" />
+    <None Include="openal32.dll" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\alienspaceship.png" />
     <Image Include="assets\background.jpeg" />
+    <Image Include="assets\background.png" />
     <Image Include="assets\fire_blue.png" />
     <Image Include="assets\fire_red.png" />
     <Image Include="assets\rock.png" />
