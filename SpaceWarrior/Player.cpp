@@ -5,7 +5,25 @@
 Player::Player()
 {
 	this->setName("player");
-	this->anim.sprite.scale(100, 100);
+	//this->anim.sprite.scale(100, 100);
+	CorrectAngle = -90;
+	DefaultWidthStart = W / 2;
+	DefaulHeightStart = H - 100;
+}
+
+int Player::getCorrectAngle()
+{
+	return this->CorrectAngle;
+}
+
+int Player::getDefaulHeightStart()
+{
+	return this->DefaulHeightStart;
+}
+
+int Player::getDefaultWidthStart()
+{
+	return this->DefaulHeightStart;
 }
 
 void Player::update()
