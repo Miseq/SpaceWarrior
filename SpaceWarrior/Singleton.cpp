@@ -14,6 +14,8 @@ Singleton::Singleton()
 	Texture* t5 = new Texture();
 	Texture* t6 = new Texture();
 	Texture* t7 = new Texture();
+	Texture* t8 = new Texture();
+	Texture* t9 = new Texture();
 
 	defaultPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingLeftPlayerTexture->loadFromFile("assets/spaceassets.png");
@@ -23,6 +25,9 @@ Singleton::Singleton()
 	t5->loadFromFile("assets/fire_blue.png");
 	t6->loadFromFile("assets/rock_small.png");
 	t7->loadFromFile("assets/explosions/type_B.png");
+	t8->loadFromFile("assets/alienspaceship.png");
+	t9->loadFromFile("assets/fire_red.png");
+
 	defaultPlayerTexture->setSmooth(true);
 	t4->setSmooth(true);
 	t5->setSmooth(true);
@@ -36,6 +41,8 @@ Singleton::Singleton()
 	Animation *sPlayerRight = new Animation(*MovingRightPlayerTexture, { 80, 40, 40, 40 }, 1, 0, { 1.3f,1.3f });
 	Animation *sPlayerLeft = new Animation(*MovingLeftPlayerTexture, { 0, 40, 40, 40 }, 1, 0, { 1.3f,1.3f });
 	Animation *sExplosion_ship = new Animation(*t7, { 0, 0, 192, 192 }, 64, 0.5);
+	Animation *sAlienShip = new Animation(*t8, { 0,0, 320, 320 }, 1, 0, { 0.28f,0.28f });
+	Animation *sEnemyBullet = new Animation(*t9, { 0, 0, 32, 64 }, 16, 0.8);
 
 	this->Animacje;
 	Animacje["asteroidExplosion"] = sExplosion;
@@ -46,8 +53,8 @@ Singleton::Singleton()
 	Animacje["playerPositionRight"] = sPlayerRight;
 	Animacje["playerPositionLeft"] = sPlayerLeft;
 	Animacje["shipExplosion"] = sExplosion_ship;
-
-
+	Animacje["alienShip"] = sAlienShip;
+	Animacje["alienBulelt"] = sEnemyBullet;
 }
 
 Singleton* Singleton::instance = 0;

@@ -16,6 +16,7 @@ public:
 	Player();
 	void playerMove(int speed = 0);
 	void setAnimation(Animation newAnim);
+	Bullet* DefaultShot();
 	~Player();
 };
 
