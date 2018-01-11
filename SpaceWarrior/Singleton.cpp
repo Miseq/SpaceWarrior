@@ -5,6 +5,7 @@
 
 Singleton::Singleton()
 {
+	// Tworzenie serii obiektów typu Texture, do przechowywania grafiki
 	Texture* defaultPlayerTexture = new Texture();
 	Texture* MovingLeftPlayerTexture = new Texture();
 	Texture* MovingRightPlayerTexture = new Texture();
@@ -17,6 +18,7 @@ Singleton::Singleton()
 	Texture* t8 = new Texture();
 	Texture* t9 = new Texture();
 
+	// Za³adowanie tekstur z plików graficznych png
 	defaultPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingLeftPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingRightPlayerTexture->loadFromFile("assets/spaceassets.png");
@@ -28,9 +30,13 @@ Singleton::Singleton()
 	t8->loadFromFile("assets/alienspaceship.png");
 	t9->loadFromFile("assets/fire_red.png");
 
+	// setSmooth ustawia mniej kanciaste poruszanie siê obiektów po przestrzeni
 	defaultPlayerTexture->setSmooth(true);
 	t4->setSmooth(true);
 	t5->setSmooth(true);
+	t8->setSmooth(true);
+	t9->setSmooth(true);
+
 	
 	// (wspo³rzêdne pocz¹tkowe wcianania x, y, rozmiar wyciêtego fragmentu x,y, iloœæ klatek, szybkoœæ zmiany klatki, skalowanie textury)
 	Animation *sExplosion = new Animation(*t3, { 0, 0, 50, 50 }, 48, 0.5);
@@ -44,6 +50,7 @@ Singleton::Singleton()
 	Animation *sAlienShip = new Animation(*t8, { 0,0, 320, 320 }, 1, 0, { 0.28f,0.28f });
 	Animation *sEnemyBullet = new Animation(*t9, { 0, 0, 32, 64 }, 16, 0.8);
 
+	// 
 	this->Animacje;
 	Animacje["asteroidExplosion"] = sExplosion;
 	Animacje["rockDefault"] = sRock;

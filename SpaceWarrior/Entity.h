@@ -3,18 +3,35 @@
 #include <string>
 class Entity : public Animation
 {
-public:
-	float x, y, dx, dy, R, angle;
+protected:
+	float R, angle;
+	Vector2f position;
+	Vector2f movment;
 	bool life;
 	std::string name;
 	Animation anim;
 	
 public:
+	void setMovment(Vector2f mov = {0, 0});
+	void setPosition(Vector2f position = {0, 0});
+	void setLife(bool life);
+	void setRadius( float R);
+	void setAngle(float angle);
+	void setAnimation(Animation& anim);
+	void setName(std::string Name);
+
+	Vector2f getPosition();
+	Vector2f getMovment();
+	Animation& getAnimation();
+	bool getLife();
+	float getRadius();
+	float getAngle();
+	std::string getName();
+
 	Entity();
 	void settings(Animation &a, int X, int Y, float Angle = 0 , int radius = 1 );
 	virtual void update() {};
-	void draw(RenderWindow &app);
 	virtual ~Entity();
-	void setName(std::string Name);
+	void draw(RenderWindow &app);
 };
 

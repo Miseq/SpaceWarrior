@@ -2,8 +2,19 @@
 #include "Animation.h"
 
 
+void Animation::setSprite(Sprite s)
+{
+	this->sprite = s;
+}
+
+Sprite& Animation::getSprite()
+{
+	return this->sprite;
+}
+
 Animation::Animation()
 {
+
 }
 
 Animation::Animation(Texture &t, FloatRect position, int count, float Speed, Vector2f scale)

@@ -8,13 +8,13 @@ Bullet::Bullet()
 
 void  Bullet::update()
 {
-	dx = cos(angle*DEGTORAD) * 6;
-	dy = sin(angle*DEGTORAD) * 6;
+	movment.x = cos(angle*DEGTORAD) * 6;
+	movment.y = sin(angle*DEGTORAD) * 6;
 	// angle+=rand()%6-3;
-	x += dx;
-	y += dy;
+	position.x += movment.x;
+	position.y += movment.y;
 
-	if (x>W || x<0 || y>H || y<0) life = 0;
+	if (position.x>W || position.x<0 || position.y>H || position.y<0) life = 0;
 }
 
 

@@ -32,10 +32,10 @@ void Player::update()
 
 
 void Player::playerMove(int speed )
-{
-	this->x += speed;
-	if (this->x <= 0) this->x = 0;
-	else if (this->x >= W) this->x = W;
+{//MOZLIWE BLEDY
+	this->position.x += speed;
+	if (this->position.x <= 0) this->position.x = 0;
+	else if (this->position.x >= W) this->position.x = W;
 }
 
 void Player::setAnimation(Animation newAnim)
@@ -47,7 +47,7 @@ Bullet* Player::DefaultShot()
 {
 	Singleton *mapOfAnimation = Singleton::getInstance();
 	Bullet *b = new Bullet();
-	b->settings(*mapOfAnimation->Animacje["bulletBlue"], this->x, this->y, this->angle, 10);
+	b->settings(*mapOfAnimation->Animacje["bulletBlue"], this->position.x, this->position.y, this->angle, 10);
 	return b;
 }
 
