@@ -40,7 +40,7 @@ void Player::playerMove(int speed )
 
 void Player::setAnimation(Animation newAnim)
 {
-	this->anim = newAnim;
+	//this->anim = newAnim;
 }
 
 Bullet* Player::DefaultShot()

@@ -6,18 +6,22 @@ class MaintenceClass
 {
 
 	list<Entity*> entities;
+	Sprite background;
 
 public:
 	list<Entity*> * getEntities();
 	bool isCollide(Entity &a, Entity &b);
-	void NewEnemies(list <Entity*>& entities);
-	void UpdateOfStatus(list <Entity*> &entities);
-	void EndingExpolsion(list <Entity*> &entities);
-	Player* CreatingPLayer(list <Entity*> &entities);
+	void NewEnemies();
+	void UpdateOfStatus();
+	void EndingExpolsion();
+	Player* CreatingPLayer();
 	void PlayerMoving(Player & p);
-	void Colisions(list <Entity*> &entities, Player &p);
-	void PlayerActions(RenderWindow& app, list <Entity*> &entities, Player & p);
-	void EnemyShooting(list <Entity*> &entities);
+	void Colisions(Player &p);
+	void PlayerActions(RenderWindow& app, Player & p);
+	void EnemyShooting();
+	void Drawning(RenderWindow &window);
+
+
 	MaintenceClass();
 	~MaintenceClass();
 };
