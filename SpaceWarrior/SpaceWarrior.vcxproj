@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Programming\SpaceWarrior\SpaceWarrior\assets;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Programming\SpaceWarrior\SpaceWarrior\assets;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Program Files %28x86%29\SFML\include;D:\Programming\SpaceWarrior\SpaceWarrior\assets;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files %28x86%29\SFML\lib;D:\Programming\SpaceWarrior\SpaceWarrior\assets;$(LibraryPath)</LibraryPath>
     <SourcePath>$(SourcePath)</SourcePath>
     <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Program Files %28x86%29\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

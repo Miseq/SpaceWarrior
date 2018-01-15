@@ -67,7 +67,7 @@ Singleton::Singleton()
 	Animacje["heart"] = sHeart;
 }
 
-Singleton* instance = 0;
+Singleton* Singleton::instance = 0;
 
 Singleton * Singleton::getInstance()
 {
