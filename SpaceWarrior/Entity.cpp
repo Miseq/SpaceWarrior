@@ -17,7 +17,8 @@ Animation& Entity::getAnimation()
 	return anim;
 }
 
-bool Entity::getLife()
+
+int Entity::getLife()
 {
 	return life;
 }
@@ -49,7 +50,7 @@ void Entity::setPosition(Vector2f position)
 	this->position.y = position.y;
 }
 
-void Entity::setLife(bool life)
+void Entity::setLife(int life)
 {
 	this->life = life;
 }
@@ -71,6 +72,7 @@ void Entity::setAnimation(Animation& anim)
 
 Entity::Entity()
 {
+	name = "";
 	life = 1;
 }
 

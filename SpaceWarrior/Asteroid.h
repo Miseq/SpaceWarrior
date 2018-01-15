@@ -5,6 +5,6 @@ class Asteroid : public Entity
 public:
 	Asteroid();
 	~Asteroid();
-	void  update();
+	virtual void  update();
 };
 

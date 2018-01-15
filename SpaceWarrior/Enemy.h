@@ -3,14 +3,11 @@
 class Enemy :
 	public Entity
 {
-private:
-	int NextShotTime;
-	int ShotDelay;
+	Clock * enemyTimer;
+	Time * timeForChangeDirection;
 public:
-	int CurrentTime;
 	Enemy();
-	void update();
-	Bullet* LaserOfDamnation();
+	virtual void update();
 	~Enemy();
 };
 

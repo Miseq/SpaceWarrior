@@ -3,8 +3,6 @@
 
 Asteroid::Asteroid()
 {
-	// dx - szybkosc poruszania w poziomie + prawo - lewo
-	// dy - szybkosc porusznia w pionie, dodatnia w dol(numeracja pikseli rosnie w dol ekranu
 	movment.x = rand() % 3 - 1.5;
 	movment.y = rand() % 2 + 0.7;
 	name = "asteroid";

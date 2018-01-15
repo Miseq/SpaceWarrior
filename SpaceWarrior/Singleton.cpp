@@ -17,6 +17,7 @@ Singleton::Singleton()
 	Texture* t7 = new Texture();
 	Texture* t8 = new Texture();
 	Texture* t9 = new Texture();
+	Texture* t10 = new Texture();
 
 	// Za³adowanie tekstur z plików graficznych png
 	defaultPlayerTexture->loadFromFile("assets/spaceassets.png");
@@ -29,6 +30,7 @@ Singleton::Singleton()
 	t7->loadFromFile("assets/explosions/type_B.png");
 	t8->loadFromFile("assets/alienspaceship.png");
 	t9->loadFromFile("assets/fire_red.png");
+	t10->loadFromFile("assets/heart.png");
 
 	// setSmooth ustawia mniej kanciaste poruszanie siê obiektów po przestrzeni
 	defaultPlayerTexture->setSmooth(true);
@@ -49,7 +51,7 @@ Singleton::Singleton()
 	Animation *sExplosion_ship = new Animation(*t7, { 0, 0, 192, 192 }, 64, 0.5);
 	Animation *sAlienShip = new Animation(*t8, { 0,0, 320, 320 }, 1, 0, { 0.28f,0.28f });
 	Animation *sEnemyBullet = new Animation(*t9, { 0, 0, 32, 64 }, 16, 0.8);
-
+	Animation *sHeart = new Animation(*t10, { 0,0,331,309 }, 1, 0, { 0.1f,0.1f });
 	// 
 	this->Animacje;
 	Animacje["asteroidExplosion"] = sExplosion;
@@ -62,9 +64,10 @@ Singleton::Singleton()
 	Animacje["shipExplosion"] = sExplosion_ship;
 	Animacje["alienShip"] = sAlienShip;
 	Animacje["alienBulelt"] = sEnemyBullet;
+	Animacje["heart"] = sHeart;
 }
 
-Singleton* Singleton::instance = 0;
+Singleton* instance = 0;
 
 Singleton * Singleton::getInstance()
 {

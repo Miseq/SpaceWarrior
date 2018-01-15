@@ -5,16 +5,17 @@ class Entity : public Animation
 {
 protected:
 	float R, angle;
+	int life;
 	Vector2f position;
 	Vector2f movment;
-	bool life;
 	std::string name;
 	Animation anim;
 	
 public:
+
 	void setMovment(Vector2f mov = {0, 0});
 	void setPosition(Vector2f position = {0, 0});
-	void setLife(bool life);
+	void setLife(int life);
 	void setRadius( float R);
 	void setAngle(float angle);
 	void setAnimation(Animation& anim);
@@ -23,7 +24,7 @@ public:
 	Vector2f getPosition();
 	Vector2f getMovment();
 	Animation& getAnimation();
-	bool getLife();
+	int getLife();
 	float getRadius();
 	float getAngle();
 	std::string getName();

@@ -17,7 +17,7 @@ public:
 	Animation();
 	~Animation();
 	Animation(Texture &t, FloatRect in_position, int count, float Speed, Vector2f scale = { 1,1 });
-	void update();
+	virtual void update();
 	bool isEnd();
 };
 
