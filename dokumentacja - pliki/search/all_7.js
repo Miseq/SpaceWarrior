@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['getangle',['getAngle',['../class_entity.html#a99fedd4fecbee4e0f85f0c0fb2ed2d86',1,'Entity']]],
+  ['getanimation',['getAnimation',['../class_entity.html#abf4378c7f8b0a57772e9bc69a18e5028',1,'Entity']]],
+  ['getcorrectangle',['getCorrectAngle',['../class_player.html#a9cc36a06d01778d21684662e035cfcdb',1,'Player']]],
+  ['getdefaulheightstart',['getDefaulHeightStart',['../class_player.html#a9517edb439774b2c593c552b9ffa0a1e',1,'Player']]],
+  ['getdefaultwidthstart',['getDefaultWidthStart',['../class_player.html#a926244e05105e8dfe0bd561766b01bb9',1,'Player']]],
+  ['getentities',['getEntities',['../class_maintence_class.html#ab2d8f0b4d5c5ca1e930f88379214a30a',1,'MaintenceClass']]],
+  ['gethearts',['getHearts',['../class_player.html#ace2f081c1d8f630064deed33eafa7a2c',1,'Player']]],
+  ['getimmortalitytext',['getImmortalityText',['../class_score.html#a1a4acfc54793c99a24866e73ddf0dfb0',1,'Score']]],
+  ['getimmunitytimer',['getImmunityTimer',['../class_player.html#aa527b8e81ac190fd519a0c59330f7664',1,'Player']]],
+  ['getinstance',['getInstance',['../class_singleton.html#ae5cc005e947b0f851ea8db2d97123d66',1,'Singleton']]],
+  ['getlife',['getLife',['../class_entity.html#aa0cd265f3a18e6b48d1fe9ce6e7ebe88',1,'Entity']]],
+  ['getmainwindow',['getMainWindow',['../class_maintence_class.html#a55ac6c904d9aa2276927359c8db7ecf7',1,'MaintenceClass']]],
+  ['getmovment',['getMovment',['../class_entity.html#a5a62accc86eb877ac9d1f8b16efb562d',1,'Entity']]],
+  ['getname',['getName',['../class_entity.html#ab824e4f163924eb4f136d3e2ff759897',1,'Entity']]],
+  ['getnickname',['getNickname',['../class_player.html#afe9b595cb578458230badc4c146b5ec8',1,'Player']]],
+  ['getplayerimmunity',['getPlayerImmunity',['../class_player.html#abde8fb9725ff4a76784ac27eebc83fd9',1,'Player']]],
+  ['getplayerscoreasint',['getPlayerScoreAsInt',['../class_score.html#ab756b94486634ed61e06bdc743b0195e',1,'Score']]],
+  ['getplayerscoreastext',['getPlayerScoreAsText',['../class_score.html#a0f2974c4dfa16cb58291f6d9e58c7929',1,'Score']]],
+  ['getposition',['getPosition',['../class_entity.html#a1fb7e4fbb32c6c079e46fc41f6eeca1b',1,'Entity']]],
+  ['getradius',['getRadius',['../class_entity.html#a655940a5f85f8e9946ec9c77be2d05d2',1,'Entity']]],
+  ['getsprite',['getSprite',['../class_animation.html#a9c9079aa3b0ad8829f605de82d16c07d',1,'Animation']]]
+];

@@ -20,7 +20,7 @@ Animation::Animation()
 Animation::Animation(Texture &t, FloatRect position, int count, float Speed, Vector2f scale)
 {
 	FloatRect in_position = position;
-	Frame = 0;
+	frame = 0;
 	speed = Speed;
 	for (int i = 0; i<count; i++)
 		frames.push_back(IntRect(in_position.left + i*in_position.width, in_position.top, in_position.width, in_position.height));
@@ -33,15 +33,15 @@ Animation::Animation(Texture &t, FloatRect position, int count, float Speed, Vec
 
 bool Animation::isEnd()
 {
-	return Frame + speed >= frames.size();
+	return frame + speed >= frames.size();
 }
 
 void Animation::update()
 {
-	Frame += speed;
+	frame += speed;
 	int n = frames.size();
-	if (Frame >= n) Frame -= n;
-	if (n>0) sprite.setTextureRect(frames[int(Frame)]);
+	if (frame >= n) frame -= n;
+	if (n>0) sprite.setTextureRect(frames[int(frame)]);
 }
 
 

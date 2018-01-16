@@ -8,7 +8,7 @@ class Animation : public Transformable
 
 protected:
 	Sprite sprite;
-	float Frame, speed;
+	float frame, speed;
 	std::vector<IntRect> frames;
 	FloatRect in_position;
 public:
