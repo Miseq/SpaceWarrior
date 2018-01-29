@@ -23,14 +23,14 @@ Singleton::Singleton()
 	defaultPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingLeftPlayerTexture->loadFromFile("assets/spaceassets.png");
 	MovingRightPlayerTexture->loadFromFile("assets/spaceassets.png");
-	t3->loadFromFile("assets/explosions/type_A.png");
-	t4->loadFromFile("assets/rock.png");
-	t5->loadFromFile("assets/fire_blue.png");
-	t6->loadFromFile("assets/rock_small.png");
-	t7->loadFromFile("assets/explosions/type_B.png");
-	t8->loadFromFile("assets/alienspaceship.png");
-	t9->loadFromFile("assets/fire_red.png");
-	t10->loadFromFile("assets/heart.png");
+	t3->loadFromFile("./assets/explosions/type_A.png");
+	t4->loadFromFile("./assets/rock.png");
+	t5->loadFromFile("./assets/fire_blue.png");
+	t6->loadFromFile("./assets/rock_small.png");
+	t7->loadFromFile("./assets/explosions/type_B.png");
+	t8->loadFromFile("./assets/alienspaceship.png");
+	t9->loadFromFile("./assets/fire_red.png");
+	t10->loadFromFile("./assets/heart.png");
 
 	// setSmooth ustawia mniej kanciaste poruszanie siê obiektów po przestrzeni
 	defaultPlayerTexture->setSmooth(true);
